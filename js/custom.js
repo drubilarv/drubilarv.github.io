@@ -229,22 +229,22 @@ jQuery(document).ready(function(){
 	/* ---------------------------------------------------------------------- */
 	
 	// Needed variables
-	var $map 				= $('#map'),
-		$tabContactClass 	= ('tab-contact'),
-		$lat 				= '-37.81759',
-		$lon 				= '144.964557';
+	// var $map 				= $('#map'),
+	// 	$tabContactClass 	= ('tab-contact'),
+	// 	$lat 				= '-37.81759',
+	// 	$lon 				= '144.964557';
 
-	$map.gmap().bind('init', function(ev, map) {
-		$map.gmap('addMarker', {'position': $lat +','+ $lon  , 'bounds': true}).click(function() {
-			$map.gmap('openInfoWindow', {'content': 'Hello World!'}, this);
-		});
-		$map.gmap('option', 'zoom', 16);
-	});
+	// $map.gmap().bind('init', function(ev, map) {
+	// 	$map.gmap('addMarker', {'position': $lat +','+ $lon  , 'bounds': true}).click(function() {
+	// 		$map.gmap('openInfoWindow', {'content': 'Hello World!'}, this);
+	// 	});
+	// 	$map.gmap('option', 'zoom', 16);
+	// });
 
-	// Refresh Map
-	$content.bind('easytabs:after', function(evt,tab,panel) {
-		$map.gmap('refresh'); 
-  	});
+	// // Refresh Map
+	// $content.bind('easytabs:after', function(evt,tab,panel) {
+	// 	$map.gmap('refresh'); 
+  	// });
 
       
   
